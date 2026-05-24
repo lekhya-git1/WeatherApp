@@ -1,0 +1,86 @@
+/* App.css */
+
+.App {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.weather-app {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  border-radius: 12px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.city-search {
+  margin-bottom: 20px;
+}
+
+.city {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  text-align: center;
+}
+
+.city-name h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.city-name span {
+  font-size: 18px;
+  margin-left: 5px;
+  color: #ffd700;
+}
+
+.date {
+  margin: 10px 0;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.weather {
+  margin: 15px 0;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.weather img {
+  vertical-align: middle;
+  width: 60px;
+  height: 60px;
+}
+
+.degree {
+  font-size: 20px;
+  margin-left: 4px;
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.error {
+  margin-top: 20px;
+  background: rgba(255, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.error-message {
+  font-weight: bold;
+  color: #fff;
+}
