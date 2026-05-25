@@ -1,86 +1,136 @@
-/* App.css */
-
-.App {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to right, #00c6ff, #0072ff);
-  min-height: 100vh;
+/* Full screen background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-image : url('./image.jpg');
+  background-size: cover;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
 }
 
+/* Main app container */
+.App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Weather card */
 .weather-app {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(1, 42, 60, 0.952);
+  backdrop-filter: blur(12px);
   padding: 30px;
-  border-radius: 12px;
-  width: 350px;
+  width: 380px;
+  border-radius: 20px;
   text-align: center;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  color: white;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
 }
 
+/* Search input */
 .city-search {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .city {
   width: 100%;
-  padding: 12px;
+  padding: 14px 18px;
   border: none;
-  border-radius: 8px;
   outline: none;
+  border-radius: 30px;
   font-size: 16px;
-  text-align: center;
+  background: rgba(160, 21, 21, 0.25);
+  color: white;
+  box-sizing: border-box;
 }
 
+.city::placeholder {
+  color: #f1f1f1;
+}
+
+/* City name */
 .city-name h2 {
   margin: 0;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 32px;
+  font-weight: 600;
 }
 
 .city-name span {
-  font-size: 18px;
+  font-size: 22px;
   margin-left: 5px;
-  color: #ffd700;
+  opacity: 0.9;
 }
 
+/* Date */
 .date {
-  margin: 10px 0;
-  font-size: 16px;
-  font-style: italic;
+  margin-top: 10px;
+  font-size: 18px;
+  opacity: 0.9;
 }
 
+/* Weather section */
 .weather {
-  margin: 15px 0;
-  font-size: 32px;
+  margin: 25px 0;
+  font-size: 65px;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .weather img {
-  vertical-align: middle;
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
 }
 
 .degree {
-  font-size: 20px;
-  margin-left: 4px;
+  font-size: 30px;
+  margin-left: 5px;
 }
 
+/* Description */
 .description {
-  margin-top: 10px;
-  font-size: 16px;
+  font-size: 20px;
+  line-height: 1.8;
+  text-transform: capitalize;
 }
 
+/* Error message */
 .error {
   margin-top: 20px;
-  background: rgba(255, 0, 0, 0.6);
-  padding: 10px;
-  border-radius: 8px;
 }
 
 .error-message {
-  font-weight: bold;
-  color: #fff;
+  color: #ffdddd;
+  background: rgba(255, 0, 0, 0.2);
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 500px) {
+  .weather-app {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .weather {
+    font-size: 50px;
+  }
+
+  .weather img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .city-name h2 {
+    font-size: 26px;
+  }
 }
